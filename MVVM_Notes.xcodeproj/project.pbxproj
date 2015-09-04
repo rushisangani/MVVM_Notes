@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8CAD496F0017E8FE3F944E38 /* libPods-MVVM_Notes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A77A32C0D6DE71C8DCB27BAA /* libPods-MVVM_Notes.a */; };
+		A22DCAE71B95820E0036E873 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A22DCAE61B95820E0036E873 /* DataManager.m */; };
 		A2CCC8511B8F282A00D53B0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CCC8501B8F282A00D53B0A /* main.m */; };
 		A2CCC8541B8F282A00D53B0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CCC8531B8F282A00D53B0A /* AppDelegate.m */; };
 		A2CCC8571B8F282A00D53B0A /* MVVM_Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2CCC8551B8F282A00D53B0A /* MVVM_Notes.xcdatamodeld */; };
-		A2CCC85A1B8F282A00D53B0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CCC8591B8F282A00D53B0A /* ViewController.m */; };
+		A2CCC85A1B8F282A00D53B0A /* ListNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CCC8591B8F282A00D53B0A /* ListNotesViewController.m */; };
 		A2CCC85D1B8F282A00D53B0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2CCC85B1B8F282A00D53B0A /* Main.storyboard */; };
 		A2CCC85F1B8F282A00D53B0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2CCC85E1B8F282A00D53B0A /* Images.xcassets */; };
 		A2CCC8621B8F282A00D53B0A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2CCC8601B8F282A00D53B0A /* LaunchScreen.xib */; };
 		A2CCC86E1B8F282A00D53B0A /* MVVM_NotesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CCC86D1B8F282A00D53B0A /* MVVM_NotesTests.m */; };
+		A2CCC87F1B8F293200D53B0A /* ListNotesViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CCC87E1B8F293200D53B0A /* ListNotesViewModel.m */; };
+		A2CCC8831B8F473C00D53B0A /* CreateNewNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CCC8821B8F473C00D53B0A /* CreateNewNoteViewController.m */; };
+		A2CCC8861B8F491400D53B0A /* CreateNoteViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CCC8851B8F491400D53B0A /* CreateNoteViewModel.m */; };
+		A2EF27CA1B9474AE0010D162 /* FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EF27C91B9474AE0010D162 /* FBKVOController.m */; };
+		A2F1A9A91B998C37007D6C45 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F1A9A81B998C37007D6C45 /* Note.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,20 +35,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0734FF59FFFDDF609F72690D /* Pods-MVVM_Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM_Notes.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM_Notes/Pods-MVVM_Notes.release.xcconfig"; sourceTree = "<group>"; };
+		66834B6A70927A892BDA8AC8 /* Pods-MVVM_Notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM_Notes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM_Notes/Pods-MVVM_Notes.debug.xcconfig"; sourceTree = "<group>"; };
+		A22DCAE51B95820E0036E873 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		A22DCAE61B95820E0036E873 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		A2CCC84B1B8F282A00D53B0A /* MVVM_Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2CCC84F1B8F282A00D53B0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2CCC8501B8F282A00D53B0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A2CCC8521B8F282A00D53B0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2CCC8531B8F282A00D53B0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A2CCC8561B8F282A00D53B0A /* MVVM_Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVVM_Notes.xcdatamodel; sourceTree = "<group>"; };
-		A2CCC8581B8F282A00D53B0A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A2CCC8591B8F282A00D53B0A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A2CCC8581B8F282A00D53B0A /* ListNotesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListNotesViewController.h; sourceTree = "<group>"; };
+		A2CCC8591B8F282A00D53B0A /* ListNotesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListNotesViewController.m; sourceTree = "<group>"; };
 		A2CCC85C1B8F282A00D53B0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2CCC85E1B8F282A00D53B0A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A2CCC8611B8F282A00D53B0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A2CCC8671B8F282A00D53B0A /* MVVM_NotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVM_NotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2CCC86C1B8F282A00D53B0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2CCC86D1B8F282A00D53B0A /* MVVM_NotesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVM_NotesTests.m; sourceTree = "<group>"; };
+		A2CCC87D1B8F293200D53B0A /* ListNotesViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListNotesViewModel.h; path = ViewModels/ListNotesViewModel.h; sourceTree = "<group>"; };
+		A2CCC87E1B8F293200D53B0A /* ListNotesViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListNotesViewModel.m; path = ViewModels/ListNotesViewModel.m; sourceTree = "<group>"; };
+		A2CCC8801B8F2BF500D53B0A /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		A2CCC8811B8F473C00D53B0A /* CreateNewNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateNewNoteViewController.h; sourceTree = "<group>"; };
+		A2CCC8821B8F473C00D53B0A /* CreateNewNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateNewNoteViewController.m; sourceTree = "<group>"; };
+		A2CCC8841B8F491400D53B0A /* CreateNoteViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateNoteViewModel.h; path = ViewModels/CreateNoteViewModel.h; sourceTree = "<group>"; };
+		A2CCC8851B8F491400D53B0A /* CreateNoteViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateNoteViewModel.m; path = ViewModels/CreateNoteViewModel.m; sourceTree = "<group>"; };
+		A2EF27C81B9474AE0010D162 /* FBKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBKVOController.h; sourceTree = "<group>"; };
+		A2EF27C91B9474AE0010D162 /* FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBKVOController.m; sourceTree = "<group>"; };
+		A2F1A9A71B998C37007D6C45 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		A2F1A9A81B998C37007D6C45 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		A77A32C0D6DE71C8DCB27BAA /* libPods-MVVM_Notes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVM_Notes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CAD496F0017E8FE3F944E38 /* libPods-MVVM_Notes.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +86,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A22DCAE31B9580B30036E873 /* FBKVOController */ = {
+			isa = PBXGroup;
+			children = (
+				A2EF27C81B9474AE0010D162 /* FBKVOController.h */,
+				A2EF27C91B9474AE0010D162 /* FBKVOController.m */,
+			);
+			name = FBKVOController;
+			sourceTree = "<group>";
+		};
+		A22DCAE41B9581190036E873 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				A22DCAE51B95820E0036E873 /* DataManager.h */,
+				A22DCAE61B95820E0036E873 /* DataManager.m */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
 		A2CCC8421B8F282A00D53B0A = {
 			isa = PBXGroup;
 			children = (
 				A2CCC84D1B8F282A00D53B0A /* MVVM_Notes */,
 				A2CCC86A1B8F282A00D53B0A /* MVVM_NotesTests */,
 				A2CCC84C1B8F282A00D53B0A /* Products */,
+				EA1092D65CA6EE73805DF347 /* Pods */,
+				DF0D3EF5BEC79470BEAA02A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,15 +127,19 @@
 		A2CCC84D1B8F282A00D53B0A /* MVVM_Notes */ = {
 			isa = PBXGroup;
 			children = (
+				A22DCAE31B9580B30036E873 /* FBKVOController */,
+				A22DCAE41B9581190036E873 /* DataManager */,
+				A2CCC8771B8F287500D53B0A /* Views - Controllers */,
+				A2CCC8791B8F288E00D53B0A /* ViewModels */,
+				A2CCC8781B8F288700D53B0A /* Models */,
 				A2CCC8521B8F282A00D53B0A /* AppDelegate.h */,
 				A2CCC8531B8F282A00D53B0A /* AppDelegate.m */,
-				A2CCC8581B8F282A00D53B0A /* ViewController.h */,
-				A2CCC8591B8F282A00D53B0A /* ViewController.m */,
 				A2CCC85B1B8F282A00D53B0A /* Main.storyboard */,
 				A2CCC85E1B8F282A00D53B0A /* Images.xcassets */,
 				A2CCC8601B8F282A00D53B0A /* LaunchScreen.xib */,
 				A2CCC8551B8F282A00D53B0A /* MVVM_Notes.xcdatamodeld */,
 				A2CCC84E1B8F282A00D53B0A /* Supporting Files */,
+				A2CCC8801B8F2BF500D53B0A /* Constants.h */,
 			);
 			path = MVVM_Notes;
 			sourceTree = "<group>";
@@ -122,6 +170,54 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A2CCC8771B8F287500D53B0A /* Views - Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A2CCC8581B8F282A00D53B0A /* ListNotesViewController.h */,
+				A2CCC8591B8F282A00D53B0A /* ListNotesViewController.m */,
+				A2CCC8811B8F473C00D53B0A /* CreateNewNoteViewController.h */,
+				A2CCC8821B8F473C00D53B0A /* CreateNewNoteViewController.m */,
+			);
+			name = "Views - Controllers";
+			sourceTree = "<group>";
+		};
+		A2CCC8781B8F288700D53B0A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A2F1A9A71B998C37007D6C45 /* Note.h */,
+				A2F1A9A81B998C37007D6C45 /* Note.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A2CCC8791B8F288E00D53B0A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A2CCC87D1B8F293200D53B0A /* ListNotesViewModel.h */,
+				A2CCC87E1B8F293200D53B0A /* ListNotesViewModel.m */,
+				A2CCC8841B8F491400D53B0A /* CreateNoteViewModel.h */,
+				A2CCC8851B8F491400D53B0A /* CreateNoteViewModel.m */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		DF0D3EF5BEC79470BEAA02A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A77A32C0D6DE71C8DCB27BAA /* libPods-MVVM_Notes.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA1092D65CA6EE73805DF347 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66834B6A70927A892BDA8AC8 /* Pods-MVVM_Notes.debug.xcconfig */,
+				0734FF59FFFDDF609F72690D /* Pods-MVVM_Notes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2CCC8711B8F282A00D53B0A /* Build configuration list for PBXNativeTarget "MVVM_Notes" */;
 			buildPhases = (
+				175008A74AD013B206CBCFF7 /* Check Pods Manifest.lock */,
 				A2CCC8471B8F282A00D53B0A /* Sources */,
 				A2CCC8481B8F282A00D53B0A /* Frameworks */,
 				A2CCC8491B8F282A00D53B0A /* Resources */,
+				EA4CB6C6A51AD81998F03660 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,14 +315,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		175008A74AD013B206CBCFF7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EA4CB6C6A51AD81998F03660 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MVVM_Notes/Pods-MVVM_Notes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A2CCC8471B8F282A00D53B0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A22DCAE71B95820E0036E873 /* DataManager.m in Sources */,
+				A2CCC8831B8F473C00D53B0A /* CreateNewNoteViewController.m in Sources */,
 				A2CCC8571B8F282A00D53B0A /* MVVM_Notes.xcdatamodeld in Sources */,
+				A2CCC87F1B8F293200D53B0A /* ListNotesViewModel.m in Sources */,
+				A2EF27CA1B9474AE0010D162 /* FBKVOController.m in Sources */,
+				A2F1A9A91B998C37007D6C45 /* Note.m in Sources */,
 				A2CCC8541B8F282A00D53B0A /* AppDelegate.m in Sources */,
-				A2CCC85A1B8F282A00D53B0A /* ViewController.m in Sources */,
+				A2CCC85A1B8F282A00D53B0A /* ListNotesViewController.m in Sources */,
+				A2CCC8861B8F491400D53B0A /* CreateNoteViewModel.m in Sources */,
 				A2CCC8511B8F282A00D53B0A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +486,7 @@
 		};
 		A2CCC8721B8F282A00D53B0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66834B6A70927A892BDA8AC8 /* Pods-MVVM_Notes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MVVM_Notes/Info.plist;
@@ -359,6 +497,7 @@
 		};
 		A2CCC8731B8F282A00D53B0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0734FF59FFFDDF609F72690D /* Pods-MVVM_Notes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MVVM_Notes/Info.plist;
@@ -420,6 +559,7 @@
 				A2CCC8731B8F282A00D53B0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2CCC8741B8F282A00D53B0A /* Build configuration list for PBXNativeTarget "MVVM_NotesTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +568,7 @@
 				A2CCC8761B8F282A00D53B0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

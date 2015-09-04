@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DataManager.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +15,10 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [DataManager sharedManager];
+    
     return YES;
 }
 
@@ -41,7 +43,13 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
-    [self saveContext];
+    
+    [self saveContextWithSuccess:^(NSString *result) {
+
+    } andFailure:^(NSString *error) {
+        NSLog(@"Unresolved error while saving data. %@", error);
+    }];
+     
 }
 
 #pragma mark - Core Data stack
@@ -111,17 +119,29 @@
 
 #pragma mark - Core Data Saving support
 
-- (void)saveContext {
+- (void)saveContextWithSuccess:(void (^)(NSString *result))successBlock andFailure:(void (^)(NSString *error))failureBlock {
+
     NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
+    
     if (managedObjectContext != nil) {
         NSError *error = nil;
+        
         if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error]) {
             // Replace this implementation with code to handle the error appropriately.
             // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-            abort();
+            
+            failureBlock(error.description);
+            //abort();
         }
+        
+        successBlock(@"Saved");
     }
+}
+
+#pragma mark - Shared App Delegate
++ (AppDelegate *)sharedAppDelegate
+{
+    return (AppDelegate *)[[UIApplication sharedApplication] delegate];
 }
 
 @end
